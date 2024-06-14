@@ -46,12 +46,11 @@ Le projet couvre les sujets suivants :
 
 1. **Cloner le dépôt** :
     ```sh
-    git clone https://github.com/votre-utilisateur/votre-depot.git
-    cd votre-depot
+    git clone https://github.com/Stanislas-Mainguy/HTML5.git
     ```
 
 2. **Ouvrir le projet dans VSCode** :
-    - Lancez VSCode et ouvrez le dossier du projet.
+    - Lancez VSCode ou avec l'IDE de votre choix et ouvrez le dossier du projet.
 
 3. **Explorer le contenu** :
     - Naviguez dans les fichiers pour découvrir les explications et les exemples de code.
