@@ -1,6 +1,6 @@
 # Projet de Révision HTML5
 
-Bienvenue dans ce projet de révision complet sur HTML5 ! Ce projet est conçu pour aider les développeurs de tous niveaux à réviser et à approfondir leurs connaissances en HTML5. Vous trouverez ici des explications détaillées, des exemples de code et des bonnes pratiques pour créer des pages web structurées et sémantiques.
+Bienvenue dans ce projet de révision complet sur HTML5 ! Ce projet est conçu pour aider les développeurs de tous niveaux à réviser et à approfondir leurs connaissances en HTML5. Vous trouverez ici des explications détaillées, des exemples de code et des bonnes pratiques pour créer des pages web structurées et sémantiques. (Mais aussi pour une bonne révision personnelle 😉)
 
 ## Contenu du projet
 
