@@ -1,4 +1,4 @@
-/* Body */
+/* <body> */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* <header> */
 header {
     background: #333;
     color: #fff;
@@ -19,7 +19,7 @@ header h1 {
     margin: 0;
 }
 
-/* Nav */
+/* <nav> */
 nav {
     line-height: 70px;
     height: 70px;
@@ -52,7 +52,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Main */
+/* <main> */
 main {
     padding: 20px;
     background: #fff;
@@ -61,12 +61,18 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* h1 h2 h3 etc */
+/* <h1> <h2> <h3> etc */
 h2 {
+    text-align: center;
     color: #333;
 }
 
-/* pre and code */
+/* <p> */
+p.presentation {
+    text-align: center;
+}
+
+/* <pre> et <code> */
 pre {
     overflow-x: auto;
 }
@@ -82,7 +88,7 @@ pre, code {
     font-size: 16px;
 }
 
-/* Footer */
+/* <footer> */
 footer {
     text-align: center;
     padding: 10px 0;
