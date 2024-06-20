@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projet de révision du HTML5 pour héberger par GitHub">
+    <meta name="keywords" content="HTML5, Tutoriel, Apprentissage, Révision">
+    <meta name="author" content="Stanislas Mainguy">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="favicon.io/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.io/favicon-16x16.png">
+    <!-- Ajouter une balise canonique à la fin du projet -->
     <title>Révision HTML5</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
@@ -28,74 +39,143 @@
         <section id="introduction">
             <h2>Introduction au HTML5</h2>
             <p class="presentation">Qu'est-ce que HTML5 ? Pourquoi utiliser HTML5 ?...</p>
-            <h3>Définition et importance du HTML:</h3>
-            <p>HTML, ou HyperText Markup Language, est le langage standard utilisé pour créer des pages web. 
-                Il permet de structurer et de présenter le contenu sur le World Wide Web, plus communément reconnu comme "WWW". 
-                HTML est composé d'éléments appelés balises qui décrivent différents types de contenu, 
-                comme les titres, les paragraphes, les images, les liens, etc.
-            </p> 
-            <!-- Exemple de document HTML5 -->
-            <pre><code>&lt;!DOCTYPE html&gt;
-                &lt;html lang="fr"&gt;
-                    &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                        &lt;title&gt;Titre de la page&lt;/title&gt;
-                        &lt;link rel="stylesheet" href="styles.css"&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                        &lt;header&gt;
-                            &lt;h1&gt;Bienvenue sur ma page&lt;/h1&gt;
-                            &lt;nav&gt;
-                                &lt;ul&gt;
-                                    &lt;li&gt;&lt;a href="#"&gt;Accueil&lt;/a&gt;&lt;/li&gt;
-                                    &lt;li&gt;&lt;a href="#"&gt;À propos&lt;/a&gt;&lt;/li&gt;
-                                    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-                                &lt;/ul&gt;
-                            &lt;/nav&gt;
-                        &lt;/header&gt;
-                
-                        &lt;main&gt;
-                            &lt;article&gt;
-                                &lt;h2&gt;Article Principal&lt;/h2&gt;
-                                &lt;p&gt;Voici le contenu principal de l'article.&lt;/p&gt;
-                
-                                &lt;section&gt;
-                                    &lt;h3&gt;Sous-section&lt;/h3&gt;
-                                    &lt;p&gt;Contenu de la sous-section.&lt;/p&gt;
-                                &lt;/section&gt;
-                
-                                &lt;aside&gt;
-                                    &lt;h3&gt;Informations Complémentaires&lt;/h3&gt;
-                                    &lt;p&gt;Voici des informations complémentaires pertinentes.&lt;/p&gt;
-                                &lt;/aside&gt;
-                            &lt;/article&gt;
-                
-                            &lt;picture&gt;
-                                &lt;source srcset="example.webp" type="image/webp"&gt;
-                                &lt;source srcset="example.jpg" type="image/jpeg"&gt;
-                                &lt;img src="example.jpg" alt="Description de l'image"&gt;
-                            &lt;/picture&gt;
-                
-                            &lt;form&gt;
-                                &lt;label for="name"&gt;Nom :&lt;/label&gt;
-                                &lt;input type="text" id="name" name="name"&gt;
-                
-                                &lt;label for="email"&gt;Email :&lt;/label&gt;
-                                &lt;input type="email" id="email" name="email"&gt;
-                
-                                &lt;input type="submit" value="Envoyer"&gt;
-                            &lt;/form&gt;
-                        &lt;/main&gt;
-                
-                        &lt;footer&gt;
-                            &lt;p&gt;&copy; 2024 Mon Site Web&lt;/p&gt;
-                        &lt;/footer&gt;
-                    &lt;/body&gt;
-                &lt;/html&gt;</code></pre>
-                
+            <h3>Introduction à HTML5</h3>
+            <p>Salut à toi, explorateur du web ! 🌐</p>
+            <p>HTML, ou HyperText Markup Language, c'est un peu comme la fondation de tout ce qui est génial sur le web. 
+                C'est le langage standard utilisé pour créer des pages web, et il nous permet de structurer et de 
+                présenter du contenu sur ce vaste espace qu'on appelle le World Wide Web (ou "WWW" pour les intimes).
+            </p>
+            <p>Alors, c'est quoi exactement HTML ? Imagine que tu construis une maison. HTML, ce sont les briques et 
+                le mortier qui donnent forme à ta maison web. Chaque brique est une balise qui décrit un 
+                type de contenu, comme les titres, les paragraphes, les images, les liens, et bien plus encore.
+            </p>
+            <h3>Pourquoi HTML5 est-il si cool ? 😎</h3>
+            <p>HTML5 est la dernière version de ce langage incroyable, et il apporte plein de nouvelles fonctionnalités 
+                super pratiques. Voici quelques-unes des nouveautés qui le rendent génial :
+            </p>
+            <h4>Balises sémantiques:</h4>
+            <p>HTML5 a introduit des balises qui donnent plus de sens à ton contenu. Plutôt que d'utiliser 
+                des <code>&lt;div&gt;</code> pour tout, tu peux maintenant utiliser des balises comme 
+                <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, 
+                <code>&lt;section&gt;</code>, et <code>&lt;nav&gt;</code>. Ces balises rendent ton code 
+                plus clair et plus facile à comprendre, tant pour les humains que pour les moteurs de recherche. 🎉
+            </p>
+            <h4>Support multimédia:</h4>
+            <p>Tu veux intégrer des vidéos et des audios sans te prendre la tête avec des plugins externes ? 
+                HTML5 te permet de le faire directement avec les balises <code>&lt;video&gt;</code> et 
+                <code>&lt;audio&gt;</code>. Simple comme bonjour !
+            </p>
+            <h4>Formulaires améliorés:</h4>
+            <p>Créer des formulaires interactifs et robustes n'a jamais été aussi facile. 
+                HTML5 ajoute de nouveaux types de champs (comme <code>email</code>, <code>date</code>, 
+                <code>range</code>) et des attributs de validation (<code>required</code>, 
+                <code>pattern</code>, etc.) qui rendent les formulaires plus intuitifs et fiables.
+            </p>
+            <h4>API JavaScript intégrées:</h4>
+            <p>Besoin de géolocalisation, de stockage local ou d'exécuter des scripts en arrière-plan ? 
+                HTML5 a des API pour ça ! Tu peux rendre ton site web plus interactif et performant avec des 
+                fonctionnalités comme la Geolocation API, le Local Storage, et les Web Workers.
+            </p>
+            <h3>Exemple de document HTML5:</h3>
+            <details>
+                <summary>&gt; Clique ici si tu veux voir un exemple 🧐 &lt;</summary>
+                <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Titre de la page&lt;/title&gt;
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Bienvenue sur ma page&lt;/h1&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Accueil&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;À propos&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+    
+        &lt;main&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Article Principal&lt;/h2&gt;
+                &lt;p&gt;Voici le contenu principal de l'article.&lt;/p&gt;
+    
+                &lt;section&gt;
+                    &lt;h3&gt;Sous-section&lt;/h3&gt;
+                    &lt;p&gt;Contenu de la sous-section.&lt;/p&gt;
+                &lt;/section&gt;
+
+                &lt;aside&gt;
+                    &lt;h3&gt;Informations Complémentaires&lt;/h3&gt;
+                    &lt;p&gt;Voici des informations complémentaires pertinentes.&lt;/p&gt;
+                &lt;/aside&gt;
+            &lt;/article&gt;
+
+            &lt;picture&gt;
+                &lt;source srcset="example.webp" type="image/webp"&gt;
+                &lt;source srcset="example.jpg" type="image/jpeg"&gt;
+                &lt;img src="example.jpg" alt="Description de l'image"&gt;
+            &lt;/picture&gt;
+
+            &lt;form&gt;
+                &lt;label for="name"&gt;Nom :&lt;/label&gt;
+                &lt;input type="text" id="name" name="name"&gt;
+
+                &lt;label for="email"&gt;Email :&lt;/label&gt;
+                &lt;input type="email" id="email" name="email"&gt;
+
+                &lt;input type="submit" value="Envoyer"&gt;
+            &lt;/form&gt;
+        &lt;/main&gt;
+
+        &lt;footer&gt;
+            &lt;p&gt;&copy; 2024 Mon Site Web&lt;/p&gt;
+        &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+            </details>
         </section>
-        <!-- Ajoutez d'autres sections ici -->
+        <section id="Structure">
+            <h2>Structure d'un Document HTML5</h2>
+            <p>La structure d'un document HTML se compose de plusieurs éléments fondamentaux 
+                qui définissent l'organisation et le contenu de la page web. Ces éléments comprennent :
+                <ol>
+                    <li>&lt;!DOCTYPE html&gt; : Cette déclaration doit être placée en haut de chaque document HTML 
+                        pour indiquer au navigateur que le document utilise HTML5.
+                    </li>
+                    <li>&lt;html lang="fr"&gt; : La balise &lt;html&gt; est l'élément racine qui contient tout le 
+                        contenu de la page. L'attribut lang spécifie la langue du document.
+                    </li>
+                    <li>&lt;head&gt; : La balise &lt;head&gt; contient des métadonnées sur le document HTML, 
+                        telles que le titre de la page, les encodages de caractères, les liens vers les fichiers 
+                        CSS et JavaScript, et d'autres informations de configuration.
+                    </li>
+                    <li>&lt;body&gt; : La balise &lt;body&gt; contient tout le contenu visible de la page web, 
+                        y compris le texte, les images, les liens, et autres éléments. Ces composants sont 
+                        essentiels pour créer une page web bien structurée et fonctionnelle.
+                    </li>
+                </ol>
+            </p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!--- Ici, il y a le contenu visible du site web avec d'autres balises que nous verrons plus tard. ---&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre> 
+        </section>
     </main>
 
     <footer>
