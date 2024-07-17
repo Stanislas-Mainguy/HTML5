@@ -106,14 +106,26 @@ footer {
 }
 
 /* Section pour les couleurs des <span> pour les exemples */
-.chevron-grey {
+.grey {
     color: #808080;
 }
 
-.keywords-blue {
+.blue {
     color: #489ad9;
 }
 
-.keywords-light-blue {
+.light-blue {
     color: #8fddff;
+}
+
+.white {
+    color: #cccccc;
+}
+
+.orange {
+    color: #cf8870;
+}
+
+.green {
+    color: #579e53;
 }
