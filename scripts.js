@@ -24,5 +24,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     checkScroll();
 });
-
-/* Fonction pour les couleurs appliqué pour les exemples de code */
