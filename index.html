@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projet de révision du HTML5 pour héberger par GitHub">
+    <meta name="keywords" content="HTML5, Tutoriel, Apprentissage, Révision">
+    <meta name="author" content="Stanislas Mainguy">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="favicon.io/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.io/favicon-16x16.png">
+    <!-- Ajouter une balise canonique à la fin du projet -->
+    <title>Révision HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Révision HTML5</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#formulaires">Formulaires</a></li>
+                <li><a href="#multimedia">Multimédia</a></li>
+                <li><a href="#canvas">Canvas</a></li>
+                <li><a href="#api">API</a></li>
+                <li><a href="#accessibilite">Accessibilité</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction au HTML5</h2>
+            <p class="presentation">Qu'est-ce que HTML5 ? Pourquoi utiliser HTML5 ?...</p>
+            <h3>Introduction à HTML5</h3>
+            <p>Salut à toi, explorateur du web ! 🌐</p>
+            <p>HTML, ou HyperText Markup Language, c'est un peu comme la fondation de tout ce qui est génial sur le web. 
+                C'est le langage standard utilisé pour créer des pages web, et il nous permet de structurer et de 
+                présenter du contenu sur ce vaste espace qu'on appelle le World Wide Web (ou "WWW" pour les intimes).
+            </p>
+            <p>Alors, c'est quoi exactement HTML ? Imagine que tu construis une maison. HTML, ce sont les briques et 
+                le mortier qui donnent forme à ta maison web. Chaque brique est une balise qui décrit un 
+                type de contenu, comme les titres, les paragraphes, les images, les liens, et bien plus encore.
+            </p>
+            <h3>Pourquoi HTML5 est-il si cool ? 😎</h3>
+            <p>HTML5 est la dernière version de ce langage incroyable, et il apporte plein de nouvelles fonctionnalités 
+                super pratiques. Voici quelques-unes des nouveautés qui le rendent génial :
+            </p>
+            <h4>Balises sémantiques:</h4>
+            <p>HTML5 a introduit des balises qui donnent plus de sens à ton contenu. Plutôt que d'utiliser 
+                des &lt;div&gt; pour tout, tu peux maintenant utiliser des balises comme &lt;header&gt;, 
+                &lt;footer&gt;, &lt;article&gt;, &lt;section&gt; et &lt;aside&gt;. Ces balises rendent ton code plus 
+                clair et plus facile à comprendre, tant pour les humains que pour les moteurs de recherche. 🎉
+            </p>
+            <h4>Support multimédia:</h4>
+            <p>Tu veux intégrer des vidéos et des audios sans te prendre la tête avec des plugins externes ? 
+                HTML5 te permet de le faire directement avec les balises 
+                &lt;video&gt; et &lt;audio&gt;. Simple comme bonjour !
+            </p>
+            <h4>Formulaires améliorés:</h4>
+            <p>Créer des formulaires interactifs et robustes n'a jamais été aussi facile. 
+                HTML5 ajoute de nouveaux types de champs (comme email, date, range) et des attributs de validation 
+                (required, pattern, etc.) qui rendent les formulaires plus intuitifs et fiables.
+            </p>
+            <details>
+                <summary>Exemple de formulaire</summary>
+                <pre><code>
+
+                </code></pre>
+            </details>
+            <h4>API JavaScript intégrées:</h4>
+            <p>Besoin de géolocalisation, de stockage local ou d'exécuter des scripts en arrière-plan ? 
+                HTML5 a des API pour ça ! Tu peux rendre ton site web plus interactif et performant avec des 
+                fonctionnalités comme la Geolocation API, le Local Storage, et les Web Workers.
+            </p>
+            <h3>Exemple de document HTML5:</h3>
+            <details>
+                <summary>&gt; Clique ici si tu veux voir un exemple 🧐 &lt;</summary>
+                <pre><code>
+<span class="grey">&lt;!</span><span class="blue">DOCTYPE</span> <span class="light-blue">html</span><span class="grey">&gt;</span>
+<span class="grey">&lt;</span><span class="blue">html</span> <span class="light-blue">lang</span><span class="white">=</span><span class="orange">"fr"</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="blue">head</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="blue">meta</span> <span class="light-blue">charset</span><span class="white">=</span><span class="orange">"UTF-8"</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="blue">meta</span> <span class="light-blue">name</span><span class="white">=</span><span class="orange">"viewport"</span> <span class="light-blue">content</span><span class="white">=</span><span class="orange">"width=device-width, initial-scale=1.0"</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="blue">title</span><span class="grey">&gt;</span><span class="white">Titre de la page</span><span class="grey">&lt;/</span><span class="blue">title</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="blue">link</span> <span class="light-blue">rel</span><span class="white">=</span><span class="orange">"stylesheet"</span> <span class="light-blue">href</span><span class="white">=</span><span class="orange">"styles.css"</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;/</span><span class="blue">head</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="blue">body</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="blue">header</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="blue">h1</span><span class="grey">&gt;</span><span class="white">Bienvenue sur ma page</span><span class="grey">&lt;/</span><span class="blue">h1</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="blue">nav</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="blue">ul</span><span class="grey">&gt;</span>
+                    <span class="grey">&lt;</span><span class="blue">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="blue">a</span> <span class="light-blue">href</span><span class="white">=</span><span class="orange">"#"</span><span class="grey">&gt;</span><span class="white">Accueil</span><span class="grey">&lt;/</span><span class="blue">a</span><span class="grey">&lt;/</span><span class="blue">li</span><span class="grey">&gt;</span>
+                    <span class="grey">&lt;</span><span class="blue">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="blue">a</span> <span class="light-blue">href</span><span class="white">=</span><span class="orange">"#"</span><span class="grey">&gt;</span><span class="white">À propos</span><span class="grey">&lt;/</span><span class="blue">a</span><span class="grey">&lt;/</span><span class="blue">li</span><span class="grey">&gt;</span>
+                    <span class="grey">&lt;</span><span class="blue">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="blue">a</span> <span class="light-blue">href</span><span class="white">=</span><span class="orange">"#"</span><span class="grey">&gt;</span><span class="white">Contact</span><span class="grey">&lt;/</span><span class="blue">a</span><span class="grey">&lt;/</span><span class="blue">li</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;/</span><span class="blue">ul</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="blue">nav</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;/</span><span class="blue">header</span><span class="grey">&gt;</span>
+
+        <span class="grey">&lt;</span><span class="blue">main</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="blue">article</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="blue">h2</span><span class="grey">&gt;</span><span class="white">Article Principal</span><span class="grey">&lt;/</span><span class="blue">h2</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="blue">p</span><span class="grey">&gt;</span><span class="white">Voici le contenu principal de l'article.</span><span class="grey">&lt;/</span><span class="blue">p</span><span class="grey">&gt;</span>
+
+                <span class="grey">&lt;</span><span class="blue">section</span><span class="grey">&gt;</span>
+                    <span class="grey">&lt;</span><span class="blue">h3</span><span class="grey">&gt;</span><span class="white">Sous-section</span><span class="grey">&lt;/</span><span class="blue">h3</span><span class="grey">&gt;</span>
+                    <span class="grey">&lt;</span><span class="blue">p</span><span class="grey">&gt;</span><span class="white">Contenu de la sous-section.</span><span class="grey">&lt;/</span><span class="blue">p</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;/</span><span class="blue">section</span><span class="grey">&gt;</span>
+
+                <span class="grey">&lt;</span><span class="blue">aside</span><span class="grey">&gt;</span>
+                    <span class="grey">&lt;</span><span class="blue">h3</span><span class="grey">&gt;</span><span class="white">Informations Complémentaires</span><span class="grey">&lt;/</span><span class="blue">h3</span><span class="grey">&gt;</span>
+                    <span class="grey">&lt;</span><span class="blue">p</span><span class="grey">&gt;</span><span class="white">Voici des informations complémentaires pertinentes.</span><span class="grey">&lt;/</span><span class="blue">p</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;/</span><span class="blue">aside</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="blue">article</span><span class="grey">&gt;</span>
+
+            <span class="grey">&lt;</span><span class="blue">picture</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="blue">source</span> <span class="light-blue">srcset</span><span class="white">=</span><span class="orange">"example.webp"</span> <span class="light-blue">type</span><span class="white">=</span><span class="orange">"image/webp"</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="blue">source</span> <span class="light-blue">srcset</span><span class="white">=</span><span class="orange">"example.jpg"</span> <span class="light-blue">type</span><span class="white">=</span><span class="orange">"image/jpeg"</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="blue">img</span> <span class="light-blue">src</span><span class="white">=</span><span class="orange">"example.jpg"</span> <span class="light-blue">alt</span><span class="white">=</span><span class="orange">"Description de l'image"</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="blue">picture</span><span class="grey">&gt;</span>
+
+            <span class="grey">&lt;</span><span class="blue">form</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="blue">label</span> <span class="light-blue">for</span><span class="white">=</span><span class="orange">"name"</span><span class="grey">&gt;</span><span class="white">Nom :</span><span class="grey">&lt;/</span><span class="blue">label</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="blue">input</span> <span class="light-blue">type</span><span class="white">=</span><span class="orange">"text"</span> <span class="light-blue">id</span><span class="white">=</span><span class="orange">"name"</span> <span class="light-blue">name</span><span class="white">=</span><span class="orange">"name"</span><span class="grey">&gt;</span>
+
+                <span class="grey">&lt;</span><span class="blue">label</span> <span class="light-blue">for</span><span class="white">=</span><span class="orange">"email"</span><span class="grey">&gt;</span><span class="white">Email :</span><span class="grey">&lt;/</span><span class="blue">label</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="blue">input</span> <span class="light-blue">type</span><span class="white">=</span><span class="orange">"email"</span> <span class="light-blue">id</span><span class="white">=</span><span class="orange">"email"</span> <span class="light-blue">name</span><span class="white">=</span><span class="orange">"email"</span><span class="grey">&gt;</span>
+
+                <span class="grey">&lt;</span><span class="blue">input</span> <span class="light-blue">type</span><span class="white">=</span><span class="orange">"submit"</span> <span class="light-blue">value</span><span class="white">=</span><span class="orange">"Envoyer"</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="blue">form</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;/</span><span class="blue">main</span><span class="grey">&gt;</span>
+
+        <span class="grey">&lt;</span><span class="blue">footer</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="blue">p</span><span class="grey">&gt;</span><span class="white">&copy; 2024 Mon Site Web</span><span class="grey">&lt;/</span><span class="blue">p</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;/</span><span class="blue">footer</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;/</span><span class="blue">body</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="blue">html</span><span class="grey">&gt;</span>
+                </code></pre>
+            </details>
+        </section>
+        <section id="Structure">
+            <h2>Structure d'un Document HTML5</h2>
+            <p>La structure d'un document HTML se compose de plusieurs éléments fondamentaux 
+                qui définissent l'organisation et le contenu de la page web. Ces éléments comprennent :
+                <ol>
+                    <li>&lt;!DOCTYPE html&gt; : Cette déclaration doit être placée en haut de chaque document HTML 
+                        pour indiquer au navigateur que le document utilise HTML5.
+                    </li>
+                    <li>&lt;html lang="fr"&gt; : La balise &lt;html&gt; est l'élément racine qui contient tout le 
+                        contenu de la page. L'attribut lang spécifie la langue du document.
+                    </li>
+                    <li>&lt;head&gt; : La balise &lt;head&gt; contient des métadonnées sur le document HTML, 
+                        telles que le titre de la page, les encodages de caractères, les liens vers les fichiers 
+                        CSS et JavaScript, et d'autres informations de configuration.
+                    </li>
+                    <li>&lt;body&gt; : La balise &lt;body&gt; contient tout le contenu visible de la page web, 
+                        y compris le texte, les images, les liens, et autres éléments. Ces composants sont 
+                        essentiels pour créer une page web bien structurée et fonctionnelle.
+                    </li>
+                </ol>
+            </p>
+            <pre><code>
+<span class="grey">&lt;!</span><span class="blue">DOCTYPE</span> <span class="light-blue">html</span><span class="grey">&gt;</span>
+<span class="grey">&lt;</span><span class="blue">html</span> <span class="light-blue">lang</span><span class="white">=</span><span class="orange">"fr"</span><span class="grey">&gt;</span>
+<span class="grey">&lt;</span><span class="blue">head</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="blue">meta</span> <span class="light-blue">charset</span><span class="white">=</span><span class="orange">"UTF-8"</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="blue">meta</span> <span class="light-blue">name</span><span class="white">=</span><span class="orange">"viewport"</span> <span class="light-blue">content</span><span class="white">=</span><span class="orange">"width=device-width, initial-scale=1.0"</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="blue">title</span><span class="grey">&gt;</span><span class="white">Document</span><span class="grey">&lt;/</span><span class="blue">title</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="blue">head</span><span class="grey">&gt;</span>
+<span class="grey">&lt;</span><span class="blue">body</span><span class="grey">&gt;</span>
+    <span class="grey"><span class="green">&lt;!-- Ici, il y a le contenu visible du site web avec d'autres balises que nous verrons plus tard. --&gt;</span>
+<span class="grey">&lt;/</span><span class="blue">body</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="blue">html</span><span class="grey">&gt;</span>
+            </code></pre> 
+        </section>
+    </main>
+
+    <!-- Section de collage à revoir plus tard et corriger -->
+    <span class="white"></span>
+    <span class="blue"></span>
+    <span class="light-blue"></span>
+    <span class="orange"></span>
+    <span class="grey"></span>
+    <span class="green"></span>
+
+    <form>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="range">Range (1-100) :</label>
+        <input type="range" id="range" name="range" min="1" max="100"><br><br>
+
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="pattern">Pattern (3 lettres) :</label>
+        <input type="text" id="pattern" name="pattern" pattern="[A-Za-z]{3}" required><br><br>
+
+        <input type="submit" value="Soumettre">
+    </form>
+    
+
+    <footer>
+        <p>&copy; 2024 Révision HTML5</p>
+    </footer>
+
+</body>
+</html>
